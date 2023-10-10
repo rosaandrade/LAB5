@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+<main>
+<section class="jpg">
+    <h3>JPG examples</h3>
+    <figure class="jpgDetails">
+        <img src="JPG_93K.jpg" alt="JPEG Image" width="200" height="200">
+        <figcaption>JPG Image - 93kB</figcaption>
+    </figure>
+    <figure class="jpgDetails">
+        <img src="JPG_83K.jpg" alt="JPEG Image" width="200" height="200">
+        <figcaption>JPG Image - 83kB</figcaption>
+    </figure>
+    <p class = "explanation">In this example I can not note any difference between one example to another.</p>
+</section>
+<section class="png">
+    <h3>PNG examples</h3>
+    
+    <figure class="pngDetails">
+        <img src="PNG8bits.png" alt="PNG Image" width="200" height="200">
+        <figcaption>PNG Image - 8bits</figcaption>
+    </figure>
+    <figure class="pngDetails">
+        <img src="PNG24bits.png" alt="PNG Image" width="200" height="200">
+        <figcaption>PNG Image - 24bits</figcaption>
+    </figure>
+    <figure class="pngDetails">
+        <img src="PNG.png" alt="PNG Image" width="200" height="200">
+        <figcaption>PNG Image - Original</figcaption>
+    </figure>
+    <p class = "explanation">The quality of 8bits and 24bits image is not so perfect as the original</p>
+</section>
+<section class="svg">
+    <h3>SVG examples</h3>
+    <figure>
+        <img src="SVG.svg" alt="SVG Image" width="200" height="200">
+        <figcaption>SVG Image - Photograph</figcaption>
+    </figure>
+    <p class = "explanation">The svg image is the best option between the other examples, because if you zoom in or zoom out the quality's image remain the same</p>
+</section>
+<section class="allTypes">
+    <h3>All Types</h3>
+    <button id="button" class="btn">Scale Up</button>
+    <figure class="svgimage">
+        <p>I added a border to check if the css style was working, and it was. But the other effects I added, it did not work.</p>
+        <img id="svg1" src="SVG.svg" alt="SVG Image" width="200" height="200">
+        <figcaption>SVG Image</figcaption>
+    </figure>
+    <figure class="pngDetails">
+        <img class="bordered" id="png1" src="PNG.png" alt="PNG Image" width="200" height="200">
+        <figcaption>PNG Image</figcaption>
+    </figure>
+    <figure class="jpgDetails">
+        <img id ="jpg1"  src="JPG_93K.jpg" alt="JPEG Image" width="200" height="200">
+        <figcaption>JPG Image</figcaption>
+    </figure>
+    <figure class="gifDetails">
+        <img id ="gif1"  class="bordered" src="gif.gif" alt="Gif Image" width="200" height="200">
+        <figcaption>Gif Image</figcaption>
+    </figure>
+    <script>
+        // JavaScript to handle the button click and change image widths
+        document.getElementById('button').addEventListener('click', function() {
+          // Change the width of both images to 500px
+          document.getElementById('svg1').style.width = '500px';
+          document.getElementById('png1').style.width = '500px';
+          document.getElementById('jpg1').style.width = '500px';
+        });
+      </script>
+
+
+
+
+</main>
+</body>
+</html>
